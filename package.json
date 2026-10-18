@@ -9,14 +9,37 @@
     "./element": "./element.js",
     "./style.css": "./c4mark.css"
   },
-  "files": ["c4mark.js", "element.js", "c4mark.css", "README.md", "LICENSE", "NOTICE"],
-  "sideEffects": ["./element.js", "*.css"],
+  "files": [
+    "c4mark.js",
+    "element.js",
+    "c4mark.css",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "sideEffects": [
+    "./element.js",
+    "*.css"
+  ],
   "scripts": {
     "test": "node --test test/*.test.mjs && go test ./..."
   },
-  "keywords": ["c4", "c4id", "smpte-st-2114", "content-addressing", "sha-512", "web-component", "identicon"],
+  "keywords": [
+    "c4",
+    "c4id",
+    "smpte-st-2114",
+    "content-addressing",
+    "sha-512",
+    "web-component",
+    "identicon"
+  ],
   "license": "Apache-2.0",
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Joshua Ian Kolden",
-  "repository": { "type": "git", "url": "https://github.com/Avalanche-io/c4-mark" }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avalanche-io/c4-mark.git"
+  }
 }
