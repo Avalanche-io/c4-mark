@@ -12,6 +12,20 @@ the digest, so IDs that differ look different at a glance.
 Zero dependencies: one ES module, one CSS file, and a Go package that draws
 the same SVG byte for byte.
 
+## Install
+
+```sh
+npm install @avalanche-io/c4-mark      # the JS module, element and CSS
+go get github.com/Avalanche-io/c4-mark # the Go package
+```
+
+Or with no build step, from a CDN that serves npm packages:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@avalanche-io/c4-mark@0.1/c4mark.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@avalanche-io/c4-mark@0.1/element.js"></script>
+```
+
 ```html
 <link rel="stylesheet" href="c4mark.css">
 <script type="module" src="element.js"></script>
@@ -21,7 +35,7 @@ matches <c4-id value="c459dsjf…" glyphs="2" tail="4" label="the delivered view
 ```
 
 ```js
-import { svg, markHTML, install, decode, isValid } from './c4mark.js';
+import { svg, markHTML, install, decode, isValid } from '@avalanche-io/c4-mark';
 
 svg(id);                               // the bare mark, an SVG string
 svg(id, { glyphs: 2, size: 24, ink: '#222' });
